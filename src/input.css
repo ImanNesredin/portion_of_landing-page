@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom underline animation */
+.text-decoration-underline {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 2px; /* reduced space between text and underline */
+}
+
+.text-decoration-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 4px; /* closer underline - right at the baseline */
+  left: 0;
+  width: 100%; /* Full width to cover all text */
+  height: 2px; /* thicker underline */
+  background-color: currentColor;
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.text-decoration-underline:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+/* Page entrance animation */
+.page-entrance {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.page-entrance.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.numbers {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 0;
+}
+  
+.numbers li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.5rem; /* spacing before the number */
+    @apply text-white mb-4 font-medium;
+}
+  
+.numbers li::before {
+    content: counter(step, decimal-leading-zero)".";
+    position: absolute;
+    left: 0;
+    top: 2px; /* Align with text baseline */
+    @apply font-bold text-white;
+}
+
+/* Staggered animation for list items */
+.animate-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Font family and sizes for main content */
+body, #general {
+  font-family: 'Clarkson', Helvetica, sans-serif;
+  color: white;
+  background-color: black; /* approximate background color from photo */
+}
+
+/* Heading font size and weight */
+h2 {
+  font-weight: 900;
+  font-size: 1.9rem; /* 30px - more reasonable size */
+  line-height: 1; /* Tighter line height to reduce gap between wrapped lines */
+}
+
+/* Responsive adjustments for less than medium screens */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.75rem; /* 24px - normal mobile size */
+    line-height: 1.25; /* Tighter line height for mobile */
+  }
+  .text-decoration-underline {
+    font-size: 1rem; /* approx 16px */
+  }
+}
