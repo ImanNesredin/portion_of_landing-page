@@ -570,8 +570,8 @@ video {
   top: 0px;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
 }
 
 .mb-10 {
@@ -822,6 +822,12 @@ h2 {
   .text-decoration-underline {
     font-size: 1rem;
     /* approx 16px */
+  }
+}
+
+@media (min-width: 424px) {
+  .sm\:mb-1 {
+    margin-bottom: 0.25rem;
   }
 }
 
