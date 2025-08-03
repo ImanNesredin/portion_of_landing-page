@@ -562,28 +562,20 @@ video {
   position: relative;
 }
 
-.left-\[-2px\] {
-  left: -2px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.mb-0\.5 {
-  margin-bottom: 0.125rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-\[-5px\] {
+  margin-bottom: -5px;
 }
 
-.inline-block {
-  display: inline-block;
+.ml-\[-4px\] {
+  margin-left: -4px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -594,8 +586,8 @@ video {
   display: inline-flex;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .min-h-screen {
@@ -664,13 +656,13 @@ video {
   text-align: left;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -701,8 +693,12 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-300 {
-  transition-duration: 300ms;
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Custom underline animation */
@@ -758,10 +754,10 @@ video {
 .numbers li {
   counter-increment: step;
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 3rem;
   /* spacing before the number */
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -822,12 +818,6 @@ h2 {
   .text-decoration-underline {
     font-size: 1rem;
     /* approx 16px */
-  }
-}
-
-@media (min-width: 424px) {
-  .sm\:mb-1 {
-    margin-bottom: 0.25rem;
   }
 }
 

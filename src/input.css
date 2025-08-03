@@ -49,8 +49,8 @@
 .numbers li {
     counter-increment: step;
     position: relative;
-    padding-left: 2.5rem; /* spacing before the number */
-    @apply text-white mb-4 font-medium;
+    padding-left: 3rem; /* spacing before the number */
+    @apply text-white mb-4 font-bold;
 }
   
 .numbers li::before {
