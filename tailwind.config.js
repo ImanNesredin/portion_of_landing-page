@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./*.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -15,7 +16,7 @@ module.exports = {
         lightGray: 'rgb(162, 153, 145)'
       },
       fontFamily: {
-        clarkson: ['Clarkson', 'Helvetica', 'sans-serif'],
+        clarkson:['Outfit', 'Helvetica', 'sans-serif'],
       },
     },
   },

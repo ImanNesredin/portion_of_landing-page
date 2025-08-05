@@ -566,12 +566,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mb-\[-5px\] {
-  margin-bottom: -5px;
-}
-
-.ml-\[-4px\] {
-  margin-left: -4px;
+.mb-\[-2px\] {
+  margin-bottom: -2px;
 }
 
 .mt-4 {
@@ -586,16 +582,16 @@ video {
   display: inline-flex;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-4 {
+  height: 1rem;
 }
 
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-4 {
+  width: 1rem;
 }
 
 .w-full {
@@ -639,6 +635,11 @@ video {
   background-color: rgb(162 153 145 / var(--tw-bg-opacity, 1));
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -648,12 +649,16 @@ video {
   padding-bottom: 1px;
 }
 
-.pl-4 {
-  padding-left: 1rem;
+.pb-\[3px\] {
+  padding-bottom: 3px;
 }
 
 .text-left {
   text-align: left;
+}
+
+.font-clarkson {
+  font-family: Outfit, Helvetica, sans-serif;
 }
 
 .text-2xl {
@@ -668,10 +673,6 @@ video {
 
 .font-black {
   font-weight: 900;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .font-medium {
@@ -721,7 +722,7 @@ video {
   width: 100%;
   /* Full width to cover all text */
   height: 2px;
-  /* thicker underline */
+  /* thicsker underline */
   background-color: currentColor;
   transform-origin: left;
   transition: transform 0.4s ease-in-out;
@@ -789,7 +790,6 @@ video {
 /* Font family and sizes for main content */
 
 body, #general {
-  font-family: 'Clarkson', Helvetica, sans-serif;
   color: white;
   background-color: black;
   /* approximate background color from photo */
@@ -798,10 +798,10 @@ body, #general {
 /* Heading font size and weight */
 
 h2 {
-  font-weight: 900;
-  font-size: 1.9rem;
+  font-weight: 600;
+  font-size: 2.5rem;
   /* 30px - more reasonable size */
-  line-height: 1;
+  line-height: 2.5rem;
   /* Tighter line height to reduce gap between wrapped lines */
 }
 
@@ -811,7 +811,7 @@ h2 {
   h2 {
     font-size: 1.75rem;
     /* 24px - normal mobile size */
-    line-height: 1.25;
+    line-height: 1.75rem;
     /* Tighter line height for mobile */
   }
 
@@ -826,8 +826,8 @@ h2 {
     width: 50%;
   }
 
-  .md\:max-w-\[224px\] {
-    max-width: 224px;
+  .md\:max-w-\[280px\] {
+    max-width: 280px;
   }
 
   .md\:flex-row {
